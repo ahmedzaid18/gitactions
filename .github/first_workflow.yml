@@ -1,8 +1,6 @@
 name: first work
 
 on: push
-
-
 jobs:
 
      first_job:
