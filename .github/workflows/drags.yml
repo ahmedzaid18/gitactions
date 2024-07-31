@@ -20,4 +20,15 @@ jobs:
              name: dragons.file
              path: drags.txt
 
+    fifrst_job:
+                runs-on: ubuntu-latest
+                needs: first_job
+                steps:
+                - name: down
+                  uses: actions/download-artifact@v3
+                  with: 
+                    name: dragons-file
+                - name: cart
+                  run: cat dragons
+
           
