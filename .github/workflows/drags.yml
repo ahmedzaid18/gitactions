@@ -15,7 +15,7 @@ jobs:
         - name: list
           run: ls -ltra >> drags.txt
         - name: upload arti
-          uses: actions/upload/artifact@v3
+          uses: actions/upload-artifact@v3
           with:
              name: dragons.file
              path: drags.txt
