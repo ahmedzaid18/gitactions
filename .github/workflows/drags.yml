@@ -9,7 +9,15 @@ jobs:
         - name: checkout repo
           uses: actions/checkout@v4
         - name: install cowsay
-          uses: sudo apt-get install cowsay -y
-
+          run: sudo apt-get install cowsay -y
+        - name: execute cowsay
+          run: cowsay -f dragon "run for cove,hj" >> drags.txt
+        - name: list
+          run: ls -ltra >> drags.txt
+        - name: upload arti
+          uses: actions/upload-artifact@v3
+          with:
+             name: dragons.file
+             path: drags.txt
 
           

@@ -8,7 +8,6 @@ jobs:
         steps:
         - name: checkout repo
           uses: actions/checkout@v4
-
         - name: list files
           run: ls -ltra
         - name: run shell
@@ -23,9 +22,9 @@ jobs:
                 - name: checkout repo
                   uses: actions/checkout@v4
                 - name: install cowsay
-                  uses: sudo apt-get install cowsay -y
+                  run: sudo apt-get install cowsay -y
                 - name: execute cowsay
-                  uses: cowsay -f dragon "run for cove,hj" >> drags.txt
+                  run: cowsay -f dragon "run for cove,hj" >> drags.txt
                 - name: list
                   run: ls -ltra >> drags.txt
                 - name: upload arti
