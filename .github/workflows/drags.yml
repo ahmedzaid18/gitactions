@@ -32,6 +32,5 @@ jobs:
                   run: 
                     |
                     ls -lhr
-                    cat drags
-
+                    cat drags.txt
           
