@@ -27,7 +27,7 @@ jobs:
                 - name: down
                   uses: actions/download-artifact@v3
                   with: 
-                    name: dragons
+                    name: dragons.file
                 - name: cart
                   run: cat dragons
 
