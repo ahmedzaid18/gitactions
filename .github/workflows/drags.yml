@@ -29,6 +29,9 @@ jobs:
                   with: 
                     name: dragons.file
                 - name: cart
-                  run: ls -lhr
+                  run: 
+                    |
+                    ls -lhr
+                    cat drags
 
           
