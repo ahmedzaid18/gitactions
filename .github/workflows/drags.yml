@@ -29,6 +29,6 @@ jobs:
                   with: 
                     name: dragons.file
                 - name: cart
-                  run: cat dragons
+                  run: cat dragons.file
 
           
